@@ -8,7 +8,7 @@
         <label for="name">Name</label>
         <input type="text" class="form-control" id="name"
                required
-               [(ngModel)]="model.name" name="name"
+               [(ngModel)]="model.name" name="heroname"
                #name="ngModel">
                TODO: remove this: {{model.name}}
         <div [hidden]="name.valid || name.pristine"
@@ -27,7 +27,7 @@
         <label for="power">Hero Power</label>
         <select class="form-control" id="power"
                 required
-                [(ngModel)]="model.power" name="power"
+                [(ngModel)]="model.power" name="heropower"
                 #power="ngModel">
           <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
         </select>
